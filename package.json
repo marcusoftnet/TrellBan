@@ -1,0 +1,19 @@
+{
+    "name": "TrellBan",
+    "version": "0.0.0",
+    "description": "Trello Kanban like statistics ",
+    "main": "server.js",
+    "scripts": {
+        "start": "nodemon server.js prod",
+        "test": "mocha -u bdd -b -R spec --recursive"
+    },
+    "author": "Hugo Häggmark",
+    "license": "MIT",
+    "dependencies": {
+        "express": "*"
+    },
+    "devDependencies": {
+        "mocha": "*",
+        "should": "*"
+    }
+}

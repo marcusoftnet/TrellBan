@@ -1,0 +1,56 @@
+<html>
+
+<head>
+    <title>TrellBan</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="static/css/steps.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h3 class="text-muted">Welcome to TrellBan <span id="fullName"></span></h3>
+        <p>Follow these simple steps to get Kanban style statistics for your Trello Board.</p>
+        <div class="btn-group" data-toggle="buttons">
+            <label class="btn btn-primary active" id="step1-label">
+                <input type="radio" name="options" id="step1" autocomplete="off" checked>Step 1 Connect to Trello
+            </label>
+            <label class="btn btn-primary disabled" id="step2-label">
+                <input type="radio" name="options" id="step2" autocomplete="off"> Step 2 Choose Board
+            </label>
+            <label class="btn btn-primary disabled" id="step3-label">
+                <input type="radio" name="options" id="step3" autocomplete="off"> Step 3 Define Flow
+            </label>
+        </div>
+        <p>
+            <div id="step1-content">
+                <div id="loggedout" class="jumbotron">
+                    <h3><a id="connectLink" href="# ">Connect To Trello</a></h3>
+                </div>
+            </div>
+            <div id="step2-content">
+                <div id="step2-target">
+
+                </div>
+            </div>
+            <div id="step3-content">
+                <div id="step3-target">
+
+                </div>
+                <h3>Chosen flow</h3>
+                <div id="step3-flow" class="well">
+                </div>
+            </div>
+            <div id="nav" class="btn-group">
+                <button class="btn btn-success disabled" id="prevStep">Previous step</button>
+                <button class="btn btn-success" id="nextStep">Next step</button>
+            </div>
+        </p>
+    </div>
+    <script src="//code.jquery.com/jquery-1.11.2.min.js "></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js "></script>
+    <script src="//api.trello.com/1/client.js?key=3274431952fbc2d9bd5ca0343f837d58 "></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.8.1/mustache.min.js "></script>
+    <script src="static/js/steps.js "></script>
+</body>
+
+</html>
